@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        #myDIV {
+          width: 100%;
+          padding: 50px 0;
+          text-align: center;
+          background-color: lightblue;
+          margin-top: 20px;
+         
+        }
+        table,td,tr{
+          margin-right: auto;
+          margin-left: auto;
+          border: 1px solid black;
+        }
+        h1,body{
+            text-align: center;
+            background-color: bisque;
+        }
+        </style>
+        <title>Vanguard Announcements</title>
+        </head>
+        <body>        
+        <header><h1>Vanguard Announcements</h1></header>
+        <button onclick="myFunction()">show and hide anouncements</button>
+        
+        <div id="myDIV" style=" display: none;">
+                <table id="slider">
+                <tr>
+                    <td style="text-emphasis: 600px;">Title</td><td style="text-emphasis: 600px;">Content</td><td style="text-emphasis: 600px;">Date</td>
+                </tr>
+                <tr>
+                    <td>Example</td><td>Example</td><td>Example</td>
+                </tr>
+                <tr>
+                    <td>Example</td><td>Example</td><td>Example</td>
+                </tr>
+                <tr>
+                    <td>Example</td><td>Example</td><td>Example</td>
+                </tr>
+            </table>        
+        </div>    
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>  
+        </body>
+        </html>
+
+
+
+
+
+
+
